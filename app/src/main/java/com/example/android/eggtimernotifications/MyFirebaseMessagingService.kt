@@ -38,12 +38,14 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         // TODO Step 3.5 check messages for data
         // Check if message contains a data payload.
 
+        message?.data?.let {
+            Log.d(TAG, "Message data payload: " + message.data)
+        }
 
         // TODO Step 3.6 check messages for notification and call sendNotification
         // Check if message contains a notification payload.
 
     }
-    // [END receive_message]
 
     override fun onNewToken(token: String) {
         Log.d(TAG, "Refreshed token: $token")
