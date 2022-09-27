@@ -19,6 +19,9 @@ package com.example.android.eggtimernotifications
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.android.eggtimernotifications.ui.EggTimerFragment
+import com.google.firebase.FirebaseApp
+import com.google.firebase.iid.FirebaseInstanceId
+import com.google.firebase.iid.FirebaseInstanceIdReceiver
 
 class MainActivity : AppCompatActivity() {
 
